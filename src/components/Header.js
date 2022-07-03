@@ -1,5 +1,6 @@
 // Import Assets
 import profile from "../assets/profile.jpg";
+import icon from "../assets/download.png";
 
 const Header = () => {
   return (
@@ -12,16 +13,13 @@ const Header = () => {
           Currently, a 3rd Year student pursuing a B.Tech degree in computer
           science at Vellore Institute of Technology, Chennai. Ever since I
           started studying blockchain and what exactly happens behind the
-          scenes, I've been a fanatic for Blockchain field the "Web3". I am
-          looking for an opportunity to contribute that can change and have an
-          impact on the future.
+          scenes, I've been a fanatic for Blockchain field the "Web3". 
         </p>
         <button className="button">Contact Me</button>
         <div className="cv">
-          <button>Download CV</button>
-          
+          <button><img src={icon} alt="download"/></button>
+          <p><a href="https://drive.google.com/file/d/1_-957arxqSszJcJxlcHlPtYH6EUCqAHd/view?usp=sharing">Download CV</a></p>
         </div>
-        <button>Download CV</button>
       </div>
       <div className="right">
         <div className="profile">

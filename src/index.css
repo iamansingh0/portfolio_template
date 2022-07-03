@@ -80,17 +80,80 @@ code {
   margin-left: 40px;
   padding: 10px;
 }
+
+.left .button {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.cv {
+  display: flex;
+  justify-content: left;
+  margin: 50px;
+  position: relative;
+  top: 50px;
+}
+
+.cv button img {
+  height: 15px;
+  width: 15px;
+}
+
+.cv button {
+  background-color: #272A32;
+  border: 1px solid #272A32;
+}
+
+.cv button:hover {
+  cursor: pointer;
+}
+
+
+.cv p{
+  position: relative;
+  right: 43px;
+  top: 8px;
+}
+
 .right {
   width: 45%;
-  background-color: #18adc7;
   height: 70vh;
   margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.right .profile {
+  margin: auto;
+  background-color: #E27D5F;
+  width: 100%;
+  height: calc(70vh - 100px);
+}
+
+.right .profile img  {
+  position: relative;
+  top: 7.5%;
+}
+.right .title {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #272A32;
+}
+
+.right .title p{
+  font-size: 25px;
 }
 .header img {
   max-width: 300px;
   height: auto;
   margin: 20px auto;
 }
+
+
 
 
 
