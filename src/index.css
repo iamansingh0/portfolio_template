@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -8,15 +8,15 @@
 
 body {
   margin: 0;
-  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -36,7 +36,6 @@ code {
   padding: 0 25px;
 } */
 
-.header,
 .about,
 .projects,
 .experience,
@@ -52,35 +51,48 @@ code {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-
+  flex-direction: row;
   text-align: center;
+  height: 90vh;
+  justify-content: space-around;
+  background-color: antiquewhite;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
+.left {
+  width: 45%;
+  background-color: rgb(39, 42, 50);
+  height: 70vh;
+  margin-left: 5%;
+}
+
+.left .name {
+  color: white;
+  font-size: 30px;
+  margin-top: 70px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+.left p {
+  color: rgb(107, 105, 105);
+  margin-left: 40px;
+  padding: 10px;
+}
+.right {
+  width: 45%;
+  background-color: #18adc7;
+  height: 70vh;
+  margin-right: 5%;
+}
 .header img {
   max-width: 300px;
   height: auto;
-
   margin: 20px auto;
-
-  border-radius: 50%;
 }
 
-.header__content {
-  width: 400px;
-  margin: 0 auto;
-}
 
-.header__content h1 {
-  font-size: 48px;
-}
-
-.header__content p {
-  font-size: 32px;
-}
-
-.header__content button {
-  margin: 25px auto 0;
-}
 
 /* ------------------------------------------------------ */
 /* -- About -- */
@@ -88,12 +100,14 @@ code {
 .about h2 {
   font-size: 42px;
   margin: 25px auto;
+  overflow: auto;
 }
 
 .about p {
   font-size: 18px;
   line-height: 130%;
   max-width: 75ch;
+  position: relative;
 }
 
 /* ------------------------------------------------------ */
@@ -123,7 +137,7 @@ code {
 
   padding: 20px;
 
-  border: 1px solid #0088BB;
+  border: 1px solid #0088bb;
   border-radius: 8px;
 }
 
@@ -192,7 +206,7 @@ code {
 .button {
   display: inline-block;
 
-  background: #12BDF3;
+  background: #12bdf3;
 
   padding: 15px 50px;
 
@@ -210,6 +224,6 @@ code {
 }
 
 .button:hover {
-  background: #0088BB;
-  color: #FFFFFF;
+  background: #0088bb;
+  color: #ffffff;
 }
